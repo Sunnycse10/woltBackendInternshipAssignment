@@ -3,7 +3,6 @@
 i.
 
 - Name: Sunny Chowdhury
-- Email: sunnycse10@gmail.com
 - used technology: fastapi, docker
 
 iii. To run the project, follow the instructions below.

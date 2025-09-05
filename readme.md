@@ -4,7 +4,7 @@ i.
 - Name: Sunny Chowdhury
 - used technology: fastapi, docker
 
-iii. To run the project, follow the instructions below.
+ii. To run the project, follow the instructions below.
 
 #### The instructions are based on linux (ubuntu) machine.
 

@@ -11,7 +11,6 @@ app.MapGet("/api/v1/delivery-order-price", GetDeliverOrderPriceAsync );
 
 async Task<IResult> GetDeliverOrderPriceAsync(string venue_slug, int cart_value , double user_lat , double user_lon , IDeliveryService service)
 {
-    //Console.WriteLine($"{venue_slug} {cart_value} {user_lat} {user_lon}");
     try
     {
 
@@ -23,7 +22,6 @@ async Task<IResult> GetDeliverOrderPriceAsync(string venue_slug, int cart_value 
     {
         return TypedResults.BadRequest(new { error = ex.Message });
     }
-    //return TypedResults.Ok();
 }
 
 app.Run();

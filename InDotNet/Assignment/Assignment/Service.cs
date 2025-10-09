@@ -1,7 +1,5 @@
 ﻿using Assignment.DTO;
-using System.Diagnostics.Eventing.Reader;
 using System.Text.Json;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Assignment
 {
@@ -123,7 +121,6 @@ namespace Assignment
             var coOrdinates = root.GetProperty("venue_raw").GetProperty("location").GetProperty("coordinates");
             lon = coOrdinates[0].GetDouble();
             lat = coOrdinates[1].GetDouble();
-            //return (lon, lat);
 
         }
 

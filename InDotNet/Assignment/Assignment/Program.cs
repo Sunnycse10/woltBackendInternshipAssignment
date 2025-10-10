@@ -1,6 +1,5 @@
 using Assignment;
 using Assignment.DTO;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient<IDeliveryService, DeliveryService>();
@@ -25,3 +24,4 @@ async Task<IResult> GetDeliverOrderPriceAsync(string venue_slug, int cart_value 
 }
 
 app.Run();
+public partial class Program { }

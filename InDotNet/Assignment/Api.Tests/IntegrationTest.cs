@@ -25,6 +25,18 @@ namespace Api.Tests
             Assert.NotNull(response);
             Assert.Equal(1190, response.total_price);
         }
+        [Fact]
+        public async Task Test_In_A_Different_Venue()
+        {
+            string venue_slug = "home-assignment-venue-stockholm";
+            int cart_value = 1000;
+            double user_lat = 59.35990918202689;
+            double user_lon = 18.01320527555328;
+            string url = string.Format(urlTemplate, venue_slug, cart_value, user_lat, user_lon);
+            var response = await client.GetFromJsonAsync<DeliveryInfoDTO>(url);
+            Assert.NotNull(response);
+            Assert.Equal(14698, response.total_price);
+        }
     }
 }
 
